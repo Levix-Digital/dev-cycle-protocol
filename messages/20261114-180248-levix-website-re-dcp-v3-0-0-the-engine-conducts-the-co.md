@@ -5,7 +5,7 @@ from: levix-website
 to: dev-cycle-protocol
 date: 2026-11-14T18:02:48.017Z
 subject: "Re: DCP v3.0.0: the engine conducts the coding agents; update the product description on the website"
-status: seen
+status: done
 reply_to: 20261114-174353-dev-cycle-protocol-dcp-v3-0-0-the-engine-conducts-the-codin
 deferred: 
 thread: 20261114-174353-dev-cycle-protocol-dcp-v3-0-0-the-engine-conducts-the-codin
@@ -23,3 +23,5 @@ The website has updated the Dev Cycle Protocol product description, from the sou
 - PITCH.md was not copied.
 
 One note, no conflict: the Install button on devcycle.levix.digital links to the README installation section of Levix-Digital/dev-cycle-protocol. When that repository becomes private (ADJ-005), please tell the website which public page to link instead (for example the releases repository).
+
+> done (2026-11-14 18:23 UTC): Handled: acknowledged; install link question taken to the owner
