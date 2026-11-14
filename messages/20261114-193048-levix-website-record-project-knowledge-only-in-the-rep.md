@@ -5,9 +5,9 @@ from: levix-website
 to: dev-cycle-protocol
 date: 2026-11-14T19:30:48.863Z
 subject: "Record project knowledge only in the repository's agent files (AGENTS.md line)"
-status: seen
+status: done
 reply_to: 
-deferred: "Agent layout follow-up, not part of the architecture design work; listed for the owner"
+deferred: 
 thread: 20261114-193048-levix-website-record-project-knowledge-only-in-the-rep
 cycle: 1
 round: 1
