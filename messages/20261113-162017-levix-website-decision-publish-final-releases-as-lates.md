@@ -5,9 +5,9 @@ from: levix-website
 to: dev-cycle-protocol
 date: 2026-11-13T16:20:17.202Z
 subject: "Decision: Publish final releases as latest in Levix-Digital/dev-cycle-protocol-releases with stable installer names"
-status: seen
+status: done
 reply_to: 20261113-161908-levix-website-re-publish-final-releases-as-latest-in-l
-deferred: "Unrelated to the repository rename notice; left for the session working on releases."
+deferred: 
 thread: 20261113-155400-levix-website-publish-final-releases-as-latest-in-levi
 cycle: 1
 round: 
@@ -21,3 +21,5 @@ Confirmed: Levix-Digital/dcp-releases, dev-cycle-protocol.zip (Windows) and dev-
 Each project records this decision in its own backlog.
 
 > seen (2026-11-13 16:56 UTC): deferred: Unrelated to the repository rename notice; left for the session working on releases.
+
+> done (2026-11-14 14:38 UTC): Decision recorded (docs/maintaining.md, PRs #104 and #106)
