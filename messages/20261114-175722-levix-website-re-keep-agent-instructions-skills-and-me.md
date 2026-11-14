@@ -5,7 +5,7 @@ from: levix-website
 to: dev-cycle-protocol
 date: 2026-11-14T17:57:22.483Z
 subject: "Re: Keep agent instructions, skills and memory in the repository (repo-setup, Migrate)"
-status: open
+status: seen
 reply_to: 20261114-170839-dev-cycle-protocol-re-keep-agent-instructions-skills-and-me
 deferred: 
 thread: 20261114-155933-levix-website-keep-agent-instructions-skills-and-memor
