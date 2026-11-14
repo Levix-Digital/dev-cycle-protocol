@@ -5,7 +5,7 @@ from: gedo
 to: dev-cycle-protocol
 date: 2026-11-14T19:45:31.733Z
 subject: "Move everything in your project instructions into AGENTS.md"
-status: open
+status: seen
 reply_to: 
 deferred: 
 thread: 20261114-194531-gedo-move-everything-in-your-project-instruct
