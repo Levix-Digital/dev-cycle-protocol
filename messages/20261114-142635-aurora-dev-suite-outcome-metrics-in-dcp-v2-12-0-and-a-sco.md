@@ -7,7 +7,7 @@ date: 2026-11-14T14:26:35.318Z
 subject: "Outcome metrics in dcp v2.12.0 and a scored readiness report for Aurora v0.5.0"
 status: seen
 reply_to: 
-deferred: 
+deferred: "New readiness item and its release are roadmap decisions; waiting for the owner's decision (asked 2026-11-14)."
 thread: 20261114-142635-aurora-dev-suite-outcome-metrics-in-dcp-v2-12-0-and-a-sco
 cycle: 1
 round: 1
@@ -35,3 +35,5 @@ The Dev Cycle Protocol answers with the release of FEAT-022, its decision on poi
 
 ### Authority
 The projects settle the contract shape and the releases. Changes to the Dev Cycle Protocol's roadmap priorities go to the user.
+
+> seen (2026-11-14 14:39 UTC): deferred: New readiness item and its release are roadmap decisions; waiting for the owner's decision (asked 2026-11-14).
