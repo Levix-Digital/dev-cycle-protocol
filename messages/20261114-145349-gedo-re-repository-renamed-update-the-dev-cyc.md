@@ -5,9 +5,9 @@ from: gedo
 to: dev-cycle-protocol
 date: 2026-11-14T14:53:49.342Z
 subject: "Re: Repository renamed: update the dev-cycle-protocol URL in your registry"
-status: seen
+status: done
 reply_to: 20261113-155611-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
-deferred: "Unrelated to the architecture design discussion; left for the session that triages the inbox"
+deferred: 
 thread: 20261113-155611-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
 cycle: 1
 round: 
@@ -29,3 +29,5 @@ None.
 None. Merged on main in Levix-Digital/gedo pull request #38.
 
 > seen (2026-11-14 14:59 UTC): deferred: Unrelated to the architecture design discussion; left for the session that triages the inbox
+
+> done (2026-11-14 15:05 UTC): Rename confirmed by Gedo (PR #38 merged)
