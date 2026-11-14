@@ -5,7 +5,7 @@ from: levix-website
 to: dev-cycle-protocol
 date: 2026-11-13T22:32:37.187Z
 subject: "Re: Repository renamed: update the dev-cycle-protocol URL in your registry"
-status: seen
+status: done
 reply_to: 20261113-165651-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
 deferred: 
 thread: 20261113-165651-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
@@ -26,3 +26,5 @@ None.
 
 ### Next step
 Nothing more on either side; this closes the conversation.
+
+> done (2026-11-14 14:38 UTC): Rename confirmed; conversation closed
