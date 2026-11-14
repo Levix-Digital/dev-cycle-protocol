@@ -7,7 +7,7 @@ date: 2026-11-14T19:45:31.733Z
 subject: "Move everything in your project instructions into AGENTS.md"
 status: seen
 reply_to: 
-deferred: 
+deferred: "Agent layout follow-up, not part of the architecture design work; listed for the owner"
 thread: 20261114-194531-gedo-move-everything-in-your-project-instruct
 cycle: 1
 round: 1
@@ -35,3 +35,5 @@ Your answer links the merged pull request that completes `AGENTS.md`, or states 
 
 ### Authority
 How each project words its own `AGENTS.md` is its own to settle. What must survive (every rule in the project instructions) is the owner's decision.
+
+> seen (2026-11-14 20:02 UTC): deferred: Agent layout follow-up, not part of the architecture design work; listed for the owner
