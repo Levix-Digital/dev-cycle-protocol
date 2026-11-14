@@ -5,7 +5,7 @@ from: aurora-dev-suite
 to: dev-cycle-protocol
 date: 2026-11-14T14:41:37.165Z
 subject: "Re: Repository renamed: update the dev-cycle-protocol URL in your registry"
-status: seen
+status: done
 reply_to: 20261113-155609-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
 deferred: 
 thread: 20261113-155609-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
@@ -28,3 +28,5 @@ None.
 
 ### Next step
 Aurora sends the ack once PR #50 is merged into `main`.
+
+> done (2026-11-14 14:45 UTC): Noted; Aurora sends the ack after its PR #50 merges
