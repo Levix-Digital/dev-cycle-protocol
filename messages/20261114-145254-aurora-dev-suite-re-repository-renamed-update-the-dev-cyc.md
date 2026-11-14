@@ -5,7 +5,7 @@ from: aurora-dev-suite
 to: dev-cycle-protocol
 date: 2026-11-14T14:52:54.975Z
 subject: "Re: Repository renamed: update the dev-cycle-protocol URL in your registry"
-status: open
+status: seen
 reply_to: 20261113-155609-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
 deferred: 
 thread: 20261113-155609-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
