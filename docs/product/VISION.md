@@ -1,6 +1,6 @@
 # Dev Cycle Protocol
 
-A development cycle for coding agents: open `SKILL.md` skills and deterministic checks that take a request from idea to verified release, with the user deciding at every gate. It works with any agent that reads `SKILL.md`, on a local machine or in a cloud session, and grows into coordinated parallel agents when the project uses Gedo.
+A development cycle for coding agents: an engine that conducts the agents phase by phase and deterministic checks that take a request from idea to verified release, with the user deciding at every gate. It works with the main coding agents, on a local machine or in a cloud session, and grows into coordinated parallel agents when the project uses Gedo. Until v3.0.0 the cycle runs as `SKILL.md` skills that the agent follows; from v3.0.0 the engine conducts the agents (ADR-0008).
 
 ## Problem
 
@@ -21,11 +21,11 @@ Today each developer copes with prompts, personal checklists and manual review. 
 
 ## Value Proposition
 
-- One entry command (`/dev-cycle`) that diagnoses the repository and says where to start; the user decides, the protocol guides.
-- Deterministic gates (`0`, `3`, `rc`, `8`) and a merge gate instead of trusting the agent's word.
-- Roles (product, planner, architect, reviewer, QA, DevOps, writers) with their own skill and, from v3.0.0, their own context, so the one who reviews is not the one who wrote.
+- One entry point (`/dev-cycle` today, `dcp` from v3.0.0) that diagnoses the repository and says where to start; the user decides, the protocol conducts.
+- Deterministic gates (`0`, `3`, `rc`, `8`) and a merge gate instead of trusting the agent's word; from v3.0.0 the engine starts each phase itself, so a phase cannot be skipped.
+- Roles (product, planner, architect, reviewer, QA, DevOps, writers), each from v3.0.0 in its own context, with its own permissions and with the agent and model chosen for it, so the one who reviews is not the one who wrote.
 - Decisions, plans, backlog and roadmap as files in the repository, shared by every agent and developer.
-- No lock-in: plain Markdown and one portable binary, any agent, any environment, GitHub and GitLab today.
+- No lock-in to an agent or a model: plain Markdown, one portable binary, the coding agents the developer already has, any environment, GitHub and GitLab today.
 - With Gedo, parallel agents per milestone over entity-level streams; without Gedo, the same cycle runs in sequence.
 
 ## Positioning
@@ -35,7 +35,7 @@ The approved customer-facing words; the pitch in `docs/product/PITCH.md` copies 
 - **Tagline**: The engineering process for your coding agents.
 - **One-line description**: The agent writes the code. Dev Cycle Protocol makes sure it was done the right way: specification, plan, tests, review and release, with no steps skipped.
 - **Is it an agent?** No. The coding agent reasons and writes the code; Dev Cycle Protocol says which phase the agent is in, what it may do next, and checks each step.
-- **Is it a harness?** No. It does not run the model, manage its context or call its tools; it runs inside the agent's own tool through its skills and its native engine.
+- **Is it a harness?** Not of the model: it does not run the model, manage its context or call its tools. It conducts the process: from v3.0.0 its engine starts the coding agent for each role, limits what the role may do and checks the result (ADR-0008).
 - **For a technical audience**: a development cycle protocol for coding agents, with an engine that enforces the phases and the gates; model- and tool-agnostic.
 
 ## Business Model
@@ -52,11 +52,11 @@ Open-core. The Dev Cycle Protocol and Gedo are the two free engines and stay sep
 
 ## Scope
 
-- **Cycle and gates**: the `/dev-cycle` command, phases 0 to 10, gates and the merge gate, configuration in `.dev-cycle.json`.
+- **Cycle and gates**: the entry command, phases 0 to 10, gates and the merge gate, configuration in `.dev-cycle.json`; from v3.0.0 the engine as conductor, with phase contracts, the cycle trail and one CI job that verifies it.
 - **Product and planning**: product inception, backlog with epics, roadmap of releases, versioned plans with milestones and their dependencies.
 - **Pull requests and review**: the pull request as the channel, the protocol's code review, on GitHub, GitLab, Bitbucket, Azure DevOps and Gitea.
 - **Multi-agent orchestration**: each role in its own context; with Gedo, parallel milestones over streams and deep integration of Gedo's checks into the gates.
-- **Agents and environments**: runners for the main coding agents (Claude Code, Codex, Gemini, Copilot) on a local machine and in cloud sessions.
+- **Agents and environments**: adapters for the main coding agents (Claude Code, Codex, Antigravity CLI, Copilot CLI, OpenCode) and any agent that speaks the Agent Client Protocol, on a local machine and in cloud sessions; a terminal client and a minimal chat screen.
 - **Zero-friction adoption**: execution without manual installs, onboarding in three levels and the open source launch.
 - **Quality, release and documentation**: test strategy and manual test runs, branching models, CI policy, releases, living technical docs and user READMEs.
 - **Memory**: plans shared by the team and each developer's session memory.
@@ -66,15 +66,15 @@ Open-core. The Dev Cycle Protocol and Gedo are the two free engines and stay sep
 - No paid service required to use the protocol.
 - No code specific to one environment: what depends on a provider covers the main three or four.
 - No AI attribution in commits, pull requests, reviews or docs (principle 9).
-- No dependency on a single coding agent.
+- No dependency on a single coding agent, and no model runtime of its own: the protocol never calls model APIs or stores model credentials.
 - No parallel agents without Gedo: without it, everything runs in sequence.
 - No merge with the Gedo repository: integration only through Gedo's command line with `--json`.
-- Not the platform: the dashboard, editor extension, managed relay, cloud memory and enterprise features are separate products.
+- Not the platform: the dashboard, editor extension, managed relay, cloud memory and enterprise features are separate products. The protocol's own screen is only a minimal chat (ADR-0010).
 
 ## Risks and Assumptions
 
 - **Gedo timing**: parallel work needs Gedo v0.5.0 (local streams and agent checkouts; v0.4.0 brings only the command line) and Gedo support for the project's language (Python in v0.6.0). Mitigation: role isolation in sequence ships first (v3.0.0); nothing in a release depends on an unreleased Gedo version.
-- **Agent and platform drift**: agent command lines and platform APIs change (GraphQL refused in some environments, for example). Mitigation: REST first, provider adapters behind one model, tests with recorded responses.
+- **Agent and platform drift**: agent command lines, the Agent Client Protocol and platform APIs change (GraphQL refused in some environments, for example). Mitigation: REST first, provider adapters behind one model, tests with recorded responses, and from v3.0.0 a scheduled conformance test against the newest version of each verified agent (ADR-0009).
 - **Process weight**: the full cycle may feel heavy for small changes. Mitigation: the short path, and onboarding in three levels (FEAT-006).
 - **Engine distribution**: the launcher needs the engine binary of its version, downloaded from the release (network access to GitHub on first use) or built with `cargo`. Mitigation: a checksum-verified cache per version, `DEV_CYCLE_BIN` for a binary built elsewhere, and the Python environment friction it replaced is gone (IMP-005, ADR-0007).
 - **Assumption**: teams will keep decisions and plans in the repository as files rather than in an external tool.
