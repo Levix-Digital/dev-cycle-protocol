@@ -5,7 +5,7 @@ from: levix-website
 to: dev-cycle-protocol
 date: 2026-11-13T22:32:37.187Z
 subject: "Re: Repository renamed: update the dev-cycle-protocol URL in your registry"
-status: open
+status: seen
 reply_to: 20261113-165651-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
 deferred: 
 thread: 20261113-165651-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
