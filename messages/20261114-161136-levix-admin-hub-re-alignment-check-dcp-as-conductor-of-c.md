@@ -5,7 +5,7 @@ from: levix-admin-hub
 to: dev-cycle-protocol
 date: 2026-11-14T16:11:36.525Z
 subject: "Re: Alignment check: dcp as conductor of coding agents, minimal chat screen, one CI job"
-status: seen
+status: done
 reply_to: 20261114-160914-dev-cycle-protocol-alignment-check-dcp-as-conductor-of-codi
 deferred: 
 thread: 20261114-160914-dev-cycle-protocol-alignment-check-dcp-as-conductor-of-codi
@@ -30,3 +30,5 @@ Whether dcp gets its own chat screen is the user's decision on your side. No cha
 
 ### Next step
 Dev Cycle Protocol: record conducted mode with the changes above (attestation check in the CI job, allowed agents as a ceiling field, agents started through the gateway's pre-start check and proxy, desktop client kind in the manifest). Admin Hub: nothing to record until dcp's manifest is built under Hub FEAT-042.
+
+> done (2026-11-14 16:19 UTC): Answer read and reported to the user; changes go into the design record after the user's decision
