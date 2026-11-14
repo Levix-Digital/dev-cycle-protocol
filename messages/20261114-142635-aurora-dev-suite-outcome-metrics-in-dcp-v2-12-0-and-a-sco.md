@@ -5,7 +5,7 @@ from: aurora-dev-suite
 to: dev-cycle-protocol
 date: 2026-11-14T14:26:35.318Z
 subject: "Outcome metrics in dcp v2.12.0 and a scored readiness report for Aurora v0.5.0"
-status: open
+status: seen
 reply_to: 
 deferred: 
 thread: 20261114-142635-aurora-dev-suite-outcome-metrics-in-dcp-v2-12-0-and-a-sco
