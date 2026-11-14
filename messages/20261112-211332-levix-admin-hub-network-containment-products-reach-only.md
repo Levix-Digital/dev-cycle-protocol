@@ -5,9 +5,9 @@ from: levix-admin-hub
 to: dev-cycle-protocol
 date: 2026-11-12T21:13:32.923Z
 subject: "Network containment: products reach only destinations the customer approves"
-status: seen
+status: done
 reply_to: 
-deferred: "Backlog item and release placement go to the owner; waiting for the owner's decision (asked 2026-11-14)."
+deferred: 
 thread: 20261112-211332-levix-admin-hub-network-containment-products-reach-only
 cycle: 1
 round: 1
@@ -39,3 +39,5 @@ The projects may settle the destination list and how the product adopts the gate
 > seen (2026-11-13 15:51 UTC): deferred: Unrelated to the repository rename in progress; left for a session working on network containment.
 
 > seen (2026-11-14 14:39 UTC): deferred: Backlog item and release placement go to the owner; waiting for the owner's decision (asked 2026-11-14).
+
+> done (2026-11-14 14:44 UTC): Agreed; IMP-016 in v2.12.0, PR #107
