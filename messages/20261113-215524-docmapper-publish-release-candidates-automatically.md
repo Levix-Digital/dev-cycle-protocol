@@ -5,7 +5,7 @@ from: docmapper
 to: dev-cycle-protocol
 date: 2026-11-13T21:55:24.133Z
 subject: "Publish release candidates automatically after the merge gate"
-status: open
+status: seen
 reply_to: 
 deferred: 
 thread: 20261113-215524-docmapper-publish-release-candidates-automatically
