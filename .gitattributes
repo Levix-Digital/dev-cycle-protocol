@@ -12,3 +12,27 @@ tests/parity/fixtures/folder-docs/** binary
 tests/parity/fixtures/folder-sync-state/.folder_brain/** binary
 tests/parity/fixtures/folder-query/** binary
 tests/parity/fixtures/folder-query-empty/.folder_brain/** binary
+
+# Release package: git archive (release.yml, mirror-releases.yml) leaves out everything the user
+# does not need to install and run the skills; the engine ships as signed binaries.
+/.aurora export-ignore
+/.claude export-ignore
+/.dev-cycle.json export-ignore
+/.gitattributes export-ignore
+/.github export-ignore
+/.gitignore export-ignore
+/.specify export-ignore
+/Cargo.lock export-ignore
+/Cargo.toml export-ignore
+/TECDOC.md export-ignore
+/crates export-ignore
+/rust-toolchain.toml export-ignore
+/specs export-ignore
+/tests export-ignore
+/docs/BACKLOG.md export-ignore
+/docs/ROADMAP.md export-ignore
+/docs/adr export-ignore
+/docs/architecture export-ignore
+/docs/maintaining.md export-ignore
+/docs/plans export-ignore
+/docs/product export-ignore

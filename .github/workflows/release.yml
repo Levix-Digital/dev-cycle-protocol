@@ -3,8 +3,10 @@
 #   the candidate the user installs and accepts.
 # - vX.Y.Z final tags are created by promote.yml, which calls this workflow directly (a tag pushed
 #   with GITHUB_TOKEN would not start it); a final tag pushed by hand is refused.
-# The release is the repository at its tag: users clone the tag, or download the source archives
-# attached to the release, and run install.sh or install.ps1.
+# The release carries the install package: the skills, the launchers, the installers and the user
+# docs, built with git archive at the tag; .gitattributes (export-ignore) leaves out the engine
+# source, tests, workflows and internal docs, which are never published. Users download and
+# extract it, then run install.sh or install.ps1.
 # The engine binaries are released apart as engine-vX.Y.Z (engine.yml) and the launchers download
 # the version in dev-cycle-protocol/bin/engine-version, so that release must exist first.
 # Releases go to the public releases repository named in the RELEASES_REPOSITORY variable, with the
@@ -76,16 +78,22 @@ jobs:
           args=(-f tag_name="$TAG" -f target_commitish="$(git rev-parse HEAD)")
           [ -n "$previous" ] && args+=(-f previous_tag_name="$previous")
           {
-            echo "Install: \`git clone --branch $TAG https://github.com/$GITHUB_REPOSITORY\`, or download and extract the source archive attached here, then run \`install.sh\` (or \`install.ps1\`) from that folder."
+            echo "Install: download and extract \`dev-cycle-protocol.zip\` (or \`.tar.gz\`) attached here, then run \`install.sh\` (or \`install.ps1\`) from that folder."
             echo "The engine is \`engine-v$ENGINE\`, downloaded by the launchers on first use."
             echo
             gh api "repos/$GITHUB_REPOSITORY/releases/generate-notes" "${args[@]}" --jq .body
           } > notes.md
           cat notes.md
 
-      - name: Source archives
+      - name: Install package
         run: |
           mkdir -p dist
+          # The package must never carry the engine source or other internal files.
+          git archive -o package.tar HEAD
+          if tar -tf package.tar | grep -E '^(crates|tests|specs|\.github)/|^Cargo\.(toml|lock)$'; then
+            echo "::error::the install package would carry internal files: check export-ignore in .gitattributes"; exit 1
+          fi
+          rm package.tar
           # Same asset names in every release, so releases/latest/download/<name> always works;
           # the folder inside carries the version.
           prefix="dev-cycle-protocol-${TAG#v}/"
