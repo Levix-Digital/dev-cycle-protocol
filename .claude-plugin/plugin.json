@@ -6,7 +6,7 @@
   "author": {
     "name": "Levi Silveira"
   },
-  "license": "MIT OR Apache-2.0",
+  "license": "LicenseRef-Levix-Proprietary",
   "skills": [
     "./dev-cycle",
     "./dev-cycle-protocol",

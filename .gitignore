@@ -17,8 +17,7 @@
 !/.specify/
 !/specs/
 !/README.md
-!/LICENSE-MIT
-!/LICENSE-APACHE
+!/LICENSE
 !/TECDOC.md
 !/install.ps1
 !/install.sh
