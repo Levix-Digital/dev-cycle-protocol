@@ -7,7 +7,7 @@ date: 2026-11-14T15:59:33.065Z
 subject: "Keep agent instructions, skills and memory in the repository (repo-setup, Migrate)"
 status: seen
 reply_to: 
-deferred: 
+deferred: "Repository migration is separate work; its overlap with the conducted-mode footprint is being raised with the owner"
 thread: 20261114-155933-levix-website-keep-agent-instructions-skills-and-memor
 cycle: 1
 round: 1
@@ -43,3 +43,5 @@ How the migration is done inside your repository is yours to settle. The layout,
 Beyond your own repository, two suggestions for the protocol, to settle with the owner when you plan them:
 8. DCP FEAT-029 could write this same layout (or call `repo-setup`) instead of keeping its own instruction-file template, and the `/dev-cycle` diagnosis could check the `.claude/skills` link and `core.symlinks` on Windows.
 9. A bug seen while delivering features here: `check_milestone` and `update_plan_status` mark the backlog item done as soon as every milestone is checked, before the pull request merges and the deploy is verified; projects restore `docs/BACKLOG.md` by hand and close the item in a follow-up pull request.
+
+> seen (2026-11-14 16:19 UTC): deferred: Repository migration is separate work; its overlap with the conducted-mode footprint is being raised with the owner
