@@ -30,3 +30,4 @@ Read by every skill. The guard is called by `pr_sync` before posting and by chec
 ## Decisions
 
 - [ADR-0002](../adr/0002-modular-monolith-of-skills-by-role.md): the shared kernel stays small and backward compatible
+- [ADR-0008](../adr/0008-engine-conducts-the-coding-agents-through-the-cycle.md): from v3.0.0 the engine conducts the coding agents; the kernel rule of ADR-0002 is kept for the role crates

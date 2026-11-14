@@ -1,12 +1,12 @@
 ---
 id: 2
 title: Modular monolith of skills by role
-status: accepted
+status: superseded
 date: '2026-10-25'
 version: null
 subsystems: [cycle, configuration]
 supersedes: []
-superseded_by: []
+superseded_by: [8]
 amends: []
 amended_by: []
 ---

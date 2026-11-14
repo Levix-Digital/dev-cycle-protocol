@@ -42,13 +42,17 @@ flowchart LR
 <!-- architecture-docs:adrs:start -->
 | ADR | Title | Status | Version | Date |
 |---|---|---|---|---|
+| [ADR-0011](docs/adr/0011-cycle-trail-in-the-repository-verified-by-one-ci-job.md) | Cycle trail in the repository verified by one CI job | accepted | v3.0.0 | 2026-11-14 |
+| [ADR-0010](docs/adr/0010-one-engine-interface-for-the-terminal-the-chat-screen-and-au.md) | One engine interface for the terminal, the chat screen and Aurora | accepted | v3.0.0 | 2026-11-14 |
+| [ADR-0009](docs/adr/0009-coding-agents-driven-through-acp-and-command-line-adapters.md) | Coding agents driven through ACP and command-line adapters | accepted | v3.0.0 | 2026-11-14 |
+| [ADR-0008](docs/adr/0008-engine-conducts-the-coding-agents-through-the-cycle.md) | Engine conducts the coding agents through the cycle | accepted | v3.0.0 | 2026-11-14 |
 | [ADR-0007](docs/adr/0007-native-rust-engine-translated-from-the-python-scripts.md) | Native Rust engine translated from the Python scripts | accepted | v2.10.0 | 2026-10-27 |
-| [ADR-0006](docs/adr/0006-gedo-contract-discovered-by-capability-with-safe-fallback-pe.md) | Gedo contract discovered by capability with safe fallback per check | accepted | v3.1.0 | 2026-10-25 |
+| [ADR-0006](docs/adr/0006-gedo-contract-discovered-by-capability-with-safe-fallback-pe.md) | Gedo contract discovered by capability with safe fallback per check | accepted | v3.5.0 | 2026-10-25 |
 | [ADR-0005](docs/adr/0005-parallel-agents-only-with-gedo.md) | Parallel agents only with Gedo | accepted |  | 2026-10-25 |
 | [ADR-0004](docs/adr/0004-gedo-integration-only-through-its-command-line.md) | Gedo integration only through its command line | accepted |  | 2026-10-25 |
 | [ADR-0003](docs/adr/0003-pull-requests-through-the-platform-clis-on-the-rest-api.md) | Pull requests through the platform CLIs on the REST API | accepted | v2.8.1 | 2026-10-25 |
-| [ADR-0002](docs/adr/0002-modular-monolith-of-skills-by-role.md) | Modular monolith of skills by role | accepted |  | 2026-10-25 |
-| [ADR-0001](docs/adr/0001-skills-in-the-open-skill-md-format-with-python-scripts.md) | Skills in the open SKILL.md format with Python scripts | accepted |  | 2026-10-25 |
+| [ADR-0002](docs/adr/0002-modular-monolith-of-skills-by-role.md) | Modular monolith of skills by role | superseded by ADR-0008 |  | 2026-10-25 |
+| [ADR-0001](docs/adr/0001-skills-in-the-open-skill-md-format-with-python-scripts.md) | Skills in the open SKILL.md format with Python scripts | superseded by ADR-0008 |  | 2026-10-25 |
 <!-- architecture-docs:adrs:end -->
 
 ## How to Update This Documentation

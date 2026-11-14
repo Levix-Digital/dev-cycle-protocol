@@ -3,7 +3,7 @@ id: 6
 title: Gedo contract discovered by capability with safe fallback per check
 status: accepted
 date: '2026-10-25'
-version: v3.1.0
+version: v3.5.0
 subsystems: [cycle, quality-release]
 supersedes: []
 superseded_by: []

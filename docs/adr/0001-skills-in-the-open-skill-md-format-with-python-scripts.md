@@ -1,12 +1,12 @@
 ---
 id: 1
 title: Skills in the open SKILL.md format with Python scripts
-status: accepted
+status: superseded
 date: '2026-10-25'
 version: null
 subsystems: [cycle, configuration, planning, quality-release, documentation, memory]
 supersedes: []
-superseded_by: []
+superseded_by: [8]
 amends: []
 amended_by: [7]
 ---

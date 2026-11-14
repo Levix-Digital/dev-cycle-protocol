@@ -37,3 +37,7 @@ The diagnosis never writes. Competing work comes first, in this order: a plan in
 - [ADR-0004](../adr/0004-gedo-integration-only-through-its-command-line.md): Gedo only through its command line
 - [ADR-0005](../adr/0005-parallel-agents-only-with-gedo.md): parallel agents only with Gedo
 - [ADR-0006](../adr/0006-gedo-contract-discovered-by-capability-with-safe-fallback-pe.md): Gedo commands discovered by capability, safe fallback per check, `dc.*` labels
+- [ADR-0008](../adr/0008-engine-conducts-the-coding-agents-through-the-cycle.md): from v3.0.0 the engine conducts the coding agents; replaces ADR-0001 and ADR-0002
+- [ADR-0009](../adr/0009-coding-agents-driven-through-acp-and-command-line-adapters.md): coding agents driven through ACP and command-line adapters
+- [ADR-0010](../adr/0010-one-engine-interface-for-the-terminal-the-chat-screen-and-au.md): one engine interface for the terminal, the chat screen and Aurora
+- [ADR-0011](../adr/0011-cycle-trail-in-the-repository-verified-by-one-ci-job.md): cycle trail in the repository verified by one CI job
