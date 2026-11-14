@@ -10,12 +10,14 @@
 !/crates/
 !/.claude-plugin/
 !/.claude/
+!/.agents/
+!/AGENTS.md
+!/CLAUDE.md
 !/.dev-cycle.json
 !/.specify/
 !/specs/
 !/README.md
-!/LICENSE-MIT
-!/LICENSE-APACHE
+!/LICENSE
 !/TECDOC.md
 !/install.ps1
 !/install.sh
