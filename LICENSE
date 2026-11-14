@@ -1,0 +1,38 @@
+Dev Cycle Protocol
+Copyright (c) 2026 Levix Digital. All rights reserved.
+
+This software, including its source code, documentation and binaries, is the
+proprietary property of Levix Digital.
+
+1. No license by visibility. Making this source code visible, in this
+   repository or anywhere else, grants no license. Except as stated below or
+   in a separate written agreement signed by Levix Digital, no one may use,
+   copy, modify, merge, publish, distribute, sublicense, sell or create
+   derivative works of this software, in source or binary form.
+
+2. Audit access. A customer with a valid written agreement with Levix Digital
+   may read the source code for the sole purpose of auditing the software it
+   runs under that agreement. Audit access gives no right to copy, modify,
+   build, distribute or reuse the source code.
+
+3. Binaries. Binaries released by Levix Digital are used under the terms
+   published with each release. A release with no terms of its own may be
+   installed and run for internal use only, without modification and without
+   redistribution.
+
+4. Earlier versions. Versions that Levix Digital published under the MIT
+   License or the Apache License, Version 2.0 (up to engine version 0.46.1 and
+   release candidate v2.10.0-rc.1)
+   stay available under those licenses. Those licenses do not extend to this
+   version or to any later one.
+
+5. Third-party components. Components from other authors that ship with this
+   software keep their own licenses and notices.
+
+6. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+   KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+   NO EVENT SHALL LEVIX DIGITAL BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
+
+This is an interim notice. The final license terms replace it when published.

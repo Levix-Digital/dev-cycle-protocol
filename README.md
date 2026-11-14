@@ -391,15 +391,12 @@ Adding a skill, running the tests, conventions, personal skills and updating oth
 
 ## License
 
-Copyright (c) 2026 Levix Digital.
+Copyright (c) 2026 Levix Digital. All rights reserved.
 
-Licensed under either of
+Dev Cycle Protocol is proprietary software. The source code is made available to customers only so they can audit the software they run; it may not be used, copied, modified or distributed without a written agreement with Levix Digital. See [LICENSE](LICENSE).
 
-- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or <https://www.apache.org/licenses/LICENSE-2.0>)
-- MIT license ([LICENSE-MIT](LICENSE-MIT) or <https://opensource.org/licenses/MIT>)
-
-at your option.
+Versions published under the MIT License or the Apache License, Version 2.0 (up to engine version 0.46.1 and release candidate v2.10.0-rc.1) stay available under those licenses.
 
 ### Contribution
 
-Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any additional terms or conditions.
+Contributions are accepted only under a written agreement with Levix Digital.

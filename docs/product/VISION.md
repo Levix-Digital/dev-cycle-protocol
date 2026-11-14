@@ -16,7 +16,7 @@ Today each developer copes with prompts, personal checklists and manual review. 
 ## Target Users
 
 - **Levix Digital developers (primary, now)**: build Levix products (Gedo first) with agents in several environments; want one cycle that guides them from idea to release and keeps decisions in the repository.
-- **Developers and small teams using coding agents (after the open source launch)**: work with Claude Code, Codex, Gemini, Copilot or similar; want structure, gates and review without adopting a platform or paying for a service.
+- **Developers and small teams using coding agents (after the public launch)**: work with Claude Code, Codex, Gemini, Copilot or similar; want structure, gates and review without adopting a platform or paying for a service.
 - **Engineering teams and companies (through the Levix platform, a separate product)**: need coordination across machines, managed infrastructure and compliance evidence on top of the same engine.
 
 ## Value Proposition
@@ -40,7 +40,7 @@ The approved customer-facing words; the pitch in `docs/product/PITCH.md` copies 
 
 ## Business Model
 
-Open-core. The Dev Cycle Protocol and Gedo are the two free engines and stay separate repositories. The paid Levix platform (Team Cloud as a service, Enterprise self-hosted) joins them in a visual and cloud layer: managed relay, real-time pull request service, synced memory, the team dashboard Mission Control and compliance reports. The repository is public since 2026-10-27 and open source under MIT OR Apache-2.0 since 2026-11-07 (owner's decision of 2026-11-06); the name's trademark is registered before the public launch (ADJ-004). Price per developer is a hypothesis of the platform, not of this product.
+Proprietary. The Dev Cycle Protocol and Gedo are two engines in separate repositories. The paid Levix platform (Team Cloud as a service, Enterprise self-hosted) joins them in a visual and cloud layer: managed relay, real-time pull request service, synced memory, the team dashboard Mission Control and compliance reports. Since 2026-11-14 (owner's decision) the protocol is proprietary: the source code is visible to customers only for audit, the repository is private, and binaries are published in the releases repository (ADJ-005). Versions published under MIT OR Apache-2.0 between 2026-11-07 and engine 0.46.1 stay under those licenses. The name's trademark is registered before the public launch (ADJ-004). Price per developer is a hypothesis of the platform, not of this product.
 
 ## Success Metrics
 
@@ -48,7 +48,7 @@ Open-core. The Dev Cycle Protocol and Gedo are the two free engines and stay sep
 - **Rework after gates**: fewer than 1 in 5 pull requests needs a second review round for a blocking finding.
 - **Escaped bugs**: no critical or high bug found after a release that its release candidate should have caught.
 - **Zero-friction install**: every skill runs without Python or `pip install` (since v2.10.0).
-- **Adoption (after the open source launch)**: number of repositories with a `.dev-cycle.json`.
+- **Adoption (after the public launch)**: number of repositories with a `.dev-cycle.json`.
 
 ## Scope
 
@@ -57,7 +57,7 @@ Open-core. The Dev Cycle Protocol and Gedo are the two free engines and stay sep
 - **Pull requests and review**: the pull request as the channel, the protocol's code review, on GitHub, GitLab, Bitbucket, Azure DevOps and Gitea.
 - **Multi-agent orchestration**: each role in its own context; with Gedo, parallel milestones over streams and deep integration of Gedo's checks into the gates.
 - **Agents and environments**: runners for the main coding agents (Claude Code, Codex, Gemini, Copilot) on a local machine and in cloud sessions.
-- **Zero-friction adoption**: execution without manual installs, onboarding in three levels and the open source launch.
+- **Zero-friction adoption**: execution without manual installs, onboarding in three levels and the public launch.
 - **Quality, release and documentation**: test strategy and manual test runs, branching models, CI policy, releases, living technical docs and user READMEs.
 - **Memory**: plans shared by the team and each developer's session memory.
 
@@ -81,5 +81,5 @@ Open-core. The Dev Cycle Protocol and Gedo are the two free engines and stay sep
 
 ## Open Questions
 
-- When the public launch happens; planned with Gedo v0.5.0 or v0.6.0. The license is decided: MIT OR Apache-2.0.
+- When the public launch happens; planned with Gedo v0.5.0 or v0.6.0. The license is proprietary with source visible for customer audit (ADJ-005); its final text is pending.
 - Whether the native verifiers move to Rust next to Gedo; decided in an ADR once Gedo v0.4.0 exists.
