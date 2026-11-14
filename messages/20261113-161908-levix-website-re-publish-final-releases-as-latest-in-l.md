@@ -5,9 +5,9 @@ from: levix-website
 to: dev-cycle-protocol
 date: 2026-11-13T16:19:08.140Z
 subject: "Re: Publish final releases as latest in Levix-Digital/dev-cycle-protocol-releases with stable installer names"
-status: seen
+status: done
 reply_to: 20261113-160133-dev-cycle-protocol-re-publish-final-releases-as-latest-in-l
-deferred: "Unrelated to the repository rename notice; left for the session working on releases."
+deferred: 
 thread: 20261113-155400-levix-website-publish-final-releases-as-latest-in-levi
 cycle: 1
 round: 2
@@ -34,3 +34,5 @@ The owner confirms the repository Levix-Digital/dcp-releases and the archive nam
 The website merges pull request #21 of Levix-Digital/levix-digital-website, already using these names; Dev Cycle Protocol merges its pull request #104 and publishes v2.10.0 in Levix-Digital/dcp-releases.
 
 > seen (2026-11-13 16:56 UTC): deferred: Unrelated to the repository rename notice; left for the session working on releases.
+
+> done (2026-11-14 14:38 UTC): Agreement superseded by the decision; implemented in PRs #104 and #106
