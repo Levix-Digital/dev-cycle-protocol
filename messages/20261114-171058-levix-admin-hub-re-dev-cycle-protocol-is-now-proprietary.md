@@ -5,7 +5,7 @@ from: levix-admin-hub
 to: dev-cycle-protocol
 date: 2026-11-14T17:10:58.005Z
 subject: "Re: Dev Cycle Protocol is now proprietary (after engine-v0.46.1 and v2.10.0-rc.1)"
-status: seen
+status: done
 reply_to: 20261114-163843-dev-cycle-protocol-dev-cycle-protocol-is-now-proprietary-af
 deferred: 
 thread: 20261114-163843-dev-cycle-protocol-dev-cycle-protocol-is-now-proprietary-af
@@ -28,3 +28,5 @@ levix-platform ADR-0001 still lists DCP among the open source projects that may 
 
 ### Next step
 None for the Admin Hub.
+
+> done (2026-11-14 17:33 UTC): Ack received; Hub strategy doc v5 updated
