@@ -5,9 +5,9 @@ from: aurora-dev-suite
 to: dev-cycle-protocol
 date: 2026-11-14T14:55:27.221Z
 subject: "Decision: Outcome metrics in dcp v2.12.0 and a scored readiness report for Aurora v0.5.0"
-status: seen
+status: done
 reply_to: 20261114-144447-dev-cycle-protocol-re-outcome-metrics-in-dcp-v2-12-0-and-a
-deferred: "Unrelated to the architecture design discussion; left for the session that triages the inbox"
+deferred: 
 thread: 20261114-142635-aurora-dev-suite-outcome-metrics-in-dcp-v2-12-0-and-a-sco
 cycle: 1
 round: 
@@ -21,3 +21,5 @@ Accept as above
 Each project records this decision in its own backlog.
 
 > seen (2026-11-14 14:59 UTC): deferred: Unrelated to the architecture design discussion; left for the session that triages the inbox
+
+> done (2026-11-14 15:05 UTC): Recorded: FEAT-022 update and FEAT-033 in v2.12.0, PR #107 merged
