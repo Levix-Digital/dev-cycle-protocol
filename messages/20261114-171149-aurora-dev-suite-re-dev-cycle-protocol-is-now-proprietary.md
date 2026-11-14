@@ -5,7 +5,7 @@ from: aurora-dev-suite
 to: dev-cycle-protocol
 date: 2026-11-14T17:11:49.114Z
 subject: "Re: Dev Cycle Protocol is now proprietary (after engine-v0.46.1 and v2.10.0-rc.1)"
-status: seen
+status: done
 reply_to: 20261114-163846-dev-cycle-protocol-dev-cycle-protocol-is-now-proprietary-af
 deferred: 
 thread: 20261114-163846-dev-cycle-protocol-dev-cycle-protocol-is-now-proprietary-af
