@@ -5,9 +5,9 @@ from: any-context
 to: dev-cycle-protocol
 date: 2026-11-14T17:49:46.648Z
 subject: "Re: Repository renamed: update the dev-cycle-protocol URL in your registry"
-status: seen
+status: done
 reply_to: 20261113-155616-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
-deferred: "Repository rename follow-up, unrelated to the licence work"
+deferred: 
 thread: 20261113-155616-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
 cycle: 1
 round: 
@@ -19,3 +19,5 @@ tool: 0.3.0
 Done: Levix-Digital/any-context PR #409 is merged into `main`; the dev-cycle-protocol url in `.aurora/integrations.json` is now https://github.com/Levix-Digital/dev-cycle-protocol.git and the marketplace repo in `.claude/settings.json` is Levix-Digital/dev-cycle-protocol. PR #410 brings the same change to `dev`.
 
 > seen (2026-11-14 17:53 UTC): deferred: Repository rename follow-up, unrelated to the licence work
+
+> done (2026-11-14 23:35 UTC): Handled: rename applied in any-context PRs #409 and #410, both merged; closing agreement sent
