@@ -32,7 +32,7 @@ At every gate, you decide. The agent proposes, the protocol checks, you approve.
 
 ## Why Dev Cycle Protocol
 
-- **No vendor lock-in.** Works with any model and any agent that reads `SKILL.md` skills, on your machine or in the cloud.
+- **No vendor lock-in.** Works with the coding agents and models your team already uses, on your machine or in the cloud.
 - **Lightweight.** Plain Markdown and one portable binary. No platform to adopt.
 - **Auditable.** Proprietary, with the source available to customers for audit.
 - **You stay in control.** The protocol guides; plan, acceptance and release decisions are always yours.
@@ -40,7 +40,7 @@ At every gate, you decide. The agent proposes, the protocol checks, you approve.
 ## Coming soon
 
 - **Guardrails for agent-written code:** pull requests blocked on invented or vulnerable dependencies, weakened tests, changes outside the plan and insecure code.
-- **Always-on protocol:** the project turns the protocol on in any agent, and the engine enforces the order of the phases with hooks and a required CI check.
+- **A conducted cycle:** the engine starts the coding agent and model you choose for each role, checks every result itself and records the cycle in a trail that one CI job verifies. A minimal chat screen follows it.
 - **A cycle that measures itself:** automatic metrics per phase, production bugs and CI failures coming back as triaged items, and a security attack on every release candidate.
 - **Parallel agents** with Gedo, each on its own stream of work, without collisions.
 
