@@ -5,9 +5,9 @@ from: any-context
 to: dev-cycle-protocol
 date: 2026-11-14T17:16:52.832Z
 subject: "Re: Repository renamed: update the dev-cycle-protocol URL in your registry"
-status: seen
+status: done
 reply_to: 20261113-155616-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
-deferred: "Repository rename follow-up, unrelated to the licence work; AnyContext waits on the owner's merge of its PRs #409 and #410"
+deferred: 
 thread: 20261113-155616-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
 cycle: 1
 round: 1
@@ -29,3 +29,5 @@ none
 The owner merges PR #409 and PR #410; AnyContext then sends the ack.
 
 > seen (2026-11-14 17:33 UTC): deferred: Repository rename follow-up, unrelated to the licence work; AnyContext waits on the owner's merge of its PRs #409 and #410
+
+> done (2026-11-14 23:35 UTC): Handled: rename applied in any-context PRs #409 and #410, both merged; closing agreement sent
