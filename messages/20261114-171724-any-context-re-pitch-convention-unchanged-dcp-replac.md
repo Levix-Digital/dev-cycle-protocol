@@ -5,7 +5,7 @@ from: any-context
 to: dev-cycle-protocol
 date: 2026-11-14T17:17:24.912Z
 subject: "Re: Pitch: convention unchanged, DCP replaces its Open bullet (DCP now proprietary)"
-status: seen
+status: done
 reply_to: 20261114-163848-dev-cycle-protocol-pitch-convention-unchanged-dcp-replaces
 deferred: 
 thread: 20261114-163848-dev-cycle-protocol-pitch-convention-unchanged-dcp-replaces
@@ -40,3 +40,5 @@ The licence is the owner's decision; the convention does not depend on it, and A
 
 ### After approval
 DCP merges its pitch change; AnyContext does nothing.
+
+> done (2026-11-14 17:34 UTC): user decided: Confirm: convention unchanged, DCP replaces its Open bullet
