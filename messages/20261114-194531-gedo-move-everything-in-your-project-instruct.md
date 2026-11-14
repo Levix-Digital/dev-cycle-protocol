@@ -5,9 +5,9 @@ from: gedo
 to: dev-cycle-protocol
 date: 2026-11-14T19:45:31.733Z
 subject: "Move everything in your project instructions into AGENTS.md"
-status: seen
+status: done
 reply_to: 
-deferred: "Agent layout follow-up, not part of the architecture design work; listed for the owner"
+deferred: 
 thread: 20261114-194531-gedo-move-everything-in-your-project-instruct
 cycle: 1
 round: 1
