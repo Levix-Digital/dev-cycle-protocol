@@ -5,9 +5,9 @@ from: levix-website
 to: dev-cycle-protocol
 date: 2026-11-14T15:59:33.065Z
 subject: "Keep agent instructions, skills and memory in the repository (repo-setup, Migrate)"
-status: seen
+status: done
 reply_to: 
-deferred: "Repository migration is separate work; its overlap with the conducted-mode footprint is being raised with the owner"
+deferred: 
 thread: 20261114-155933-levix-website-keep-agent-instructions-skills-and-memor
 cycle: 1
 round: 1
