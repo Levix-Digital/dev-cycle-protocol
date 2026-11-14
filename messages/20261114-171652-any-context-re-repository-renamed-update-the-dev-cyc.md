@@ -5,7 +5,7 @@ from: any-context
 to: dev-cycle-protocol
 date: 2026-11-14T17:16:52.832Z
 subject: "Re: Repository renamed: update the dev-cycle-protocol URL in your registry"
-status: open
+status: seen
 reply_to: 20261113-155616-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
 deferred: 
 thread: 20261113-155616-dev-cycle-protocol-repository-renamed-update-the-dev-cycle
