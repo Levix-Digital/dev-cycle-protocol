@@ -34,7 +34,7 @@ At every gate, you decide. The agent proposes, the protocol checks, you approve.
 
 - **No vendor lock-in.** Works with any model and any agent that reads `SKILL.md` skills, on your machine or in the cloud.
 - **Lightweight.** Plain Markdown and one portable binary. No platform to adopt.
-- **Open.** Open source (MIT or Apache-2.0) and free to use.
+- **Auditable.** Proprietary, with the source available to customers for audit.
 - **You stay in control.** The protocol guides; plan, acceptance and release decisions are always yours.
 
 ## Coming soon
