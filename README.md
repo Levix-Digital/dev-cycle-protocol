@@ -81,9 +81,15 @@ Development skills in the open `SKILL.md` format, shared by every coding agent o
 
 ## Setup
 
+Download the install package of the latest release from [Levix-Digital/dcp-releases](https://github.com/Levix-Digital/dcp-releases/releases/latest) and extract it to `~/.ai-code-agent-skills`:
+
 ```bash
-git clone https://github.com/Levix-Digital/dev-cycle-protocol.git ~/.ai-code-agent-skills
+mkdir -p ~/.ai-code-agent-skills
+curl -fsSL https://github.com/Levix-Digital/dcp-releases/releases/latest/download/dev-cycle-protocol.tar.gz \
+  | tar -xz --strip-components=1 -C ~/.ai-code-agent-skills
 ```
+
+On Windows, download `dev-cycle-protocol.zip` from the same release and extract the folder inside it to `$HOME\.ai-code-agent-skills`.
 
 Link the skills into the agents.
 

@@ -2,9 +2,10 @@
 # (RELEASES_REPOSITORY variable) does not have yet, with its assets, notes and pre-release flag.
 # It is run by hand (Actions > Mirror releases > Run workflow) once the variable and the
 # RELEASES_TOKEN secret are set; later releases are published there by engine.yml and release.yml.
-# Running it again only copies what is missing. Product releases without source archives get them
-# from their tag. The engine releases are never marked latest; the
-# newest final product release is.
+# Running it again only copies what is missing. Product releases without an install package get
+# one built from their tag with this repository's current export rules (.gitattributes), so the
+# engine source and other internal files are never published. The engine releases are never marked
+# latest; the newest final product release is.
 name: Mirror releases
 
 on:
@@ -48,12 +49,12 @@ jobs:
             if [ "$(GH_TOKEN="$SOURCE_TOKEN" gh release view "$tag" --repo "$SOURCE" --json assets --jq '.assets | length')" -gt 0 ]; then
               GH_TOKEN="$SOURCE_TOKEN" gh release download "$tag" --repo "$SOURCE" --dir assets
             fi
-            # Product releases published before the source archives existed (the release was the
-            # repository at its tag) get them here, as release.yml builds them now.
+            # Product releases published before the install package existed get it here, with the
+            # export rules of this checkout (--worktree-attributes), as release.yml builds it now.
             if [[ "$tag" == v* ]] && [ ! -e assets/dev-cycle-protocol.zip ]; then
               prefix="dev-cycle-protocol-${tag#v}/"
-              git archive --format=tar.gz --prefix="$prefix" -o assets/dev-cycle-protocol.tar.gz "$tag"
-              git archive --format=zip --prefix="$prefix" -o assets/dev-cycle-protocol.zip "$tag"
+              git archive --worktree-attributes --format=tar.gz --prefix="$prefix" -o assets/dev-cycle-protocol.tar.gz "$tag"
+              git archive --worktree-attributes --format=zip --prefix="$prefix" -o assets/dev-cycle-protocol.zip "$tag"
               (cd assets && rm -f SHA256SUMS && sha256sum * > SHA256SUMS)
             fi
             GH_TOKEN="$SOURCE_TOKEN" gh release view "$tag" --repo "$SOURCE" --json name,body,isPrerelease > info.json
