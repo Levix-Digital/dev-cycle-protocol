@@ -10,6 +10,9 @@
 !/crates/
 !/.claude-plugin/
 !/.claude/
+!/.agents/
+!/AGENTS.md
+!/CLAUDE.md
 !/.dev-cycle.json
 !/.specify/
 !/specs/

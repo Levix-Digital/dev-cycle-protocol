@@ -6,6 +6,14 @@ Each item: `### <ID>: <title>` with the fields `Severity` (bugs: critical, high,
 
 ## Bugs
 
+### BUG-007: Backlog items closed as done before the pull request merges
+- **Severity**: medium
+- **Epic**: EPIC-001
+- **Status**: open
+- **Found**: 2026-11-14, levix-website delivery, cross-project message of 2026-11-14
+- **Plan**: -
+- **Description**: check_milestone marks a plan completed as soon as every milestone is checked (update_plan_status does the same when the plan is set to completed), and sync_plan_items then closes the plan's backlog items as done. Milestones are checked during implementation, before the pull request merges and before the release or deploy is verified, so docs/BACKLOG.md says an item is done while its change is still in review; projects restore the backlog by hand and close the item in a follow-up pull request. The item should close only when its change is merged (the merge gate) or, where the cycle verifies a deploy, when that verification passes; until then it stays in_progress with the plan. Seen by levix-website on 2026-11-14.
+
 ## Features
 
 ### FEAT-001: Pull request review on Bitbucket, Azure DevOps and Gitea
