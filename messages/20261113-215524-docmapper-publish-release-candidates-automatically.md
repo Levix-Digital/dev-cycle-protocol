@@ -7,7 +7,7 @@ date: 2026-11-13T21:55:24.133Z
 subject: "Publish release candidates automatically after the merge gate"
 status: seen
 reply_to: 
-deferred: 
+deferred: "Changes this project's release flow and roadmap; waiting for the owner's decision (asked 2026-11-14)."
 thread: 20261113-215524-docmapper-publish-release-candidates-automatically
 cycle: 1
 round: 1
@@ -35,3 +35,5 @@ The project answers with agreement and the commit or pull request that adds the 
 
 ### Authority
 The projects may settle the workflow details (trigger, numbering, notes file). Skipping the human gates goes to the owner.
+
+> seen (2026-11-14 14:39 UTC): deferred: Changes this project's release flow and roadmap; waiting for the owner's decision (asked 2026-11-14).
